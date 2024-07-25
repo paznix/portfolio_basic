@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playwrite+BE+VLG:wght@100..400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans';
+}
+
+html {
+    scroll-behavior: smooth;
+    transition: ease-in-out;
+    transition-duration: 500ms;
+}
+
+body {
+    background-color: #000000;
+
+}
+
+nav>div>div> ::first-line {
+    font-family: 'Kaushan Script';
+}
+
+.burger__menu ::first-line {
+    font-family: 'Kaushan Script';
+    right: -500px;
+    transition: 300ms ease-in-out;
+}
+
+#menu__links {
+    display: none;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    
+}
+
+.dyna__text span {
+    position: relative;
+    color: #7fffd4;
+}
+
+.dyna__text span::before {
+    content: "Software Developer";
+    animation: words 20s infinite ;
+
+}
+
+.dyna__text span::after {
+    content: "";
+}
+
+
+@keyframes words {
+    from {
+        transition: opacity 200ms ease-in-out;
+    }
+
+    0%,
+    20% {
+        content: "Developer";
+    }
+
+    21%,
+    40% {
+        content: "Graphic Designer";
+    }
+
+    41%,
+    60% {
+        content: "UI/UX Designer";
+    }
+
+    61%,
+    80% {
+        content: "Gamer";
+    }
+
+    81%,
+    100% {
+        content: "Video Editor";
+    }
+}
+
+.circular__progress {
+    position: relative;
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+    background: conic-gradient(#7fffd4,3.6deg);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
