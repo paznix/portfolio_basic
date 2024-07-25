@@ -23,6 +23,9 @@
             },
           },
         },
+        screens: {
+          'md' : '1024px'
+        },
       };
     </script>
     <script src="./script.js"></script>
@@ -182,7 +185,7 @@
       </section>
       <section
         id="skills"
-        class="w-full h-screen bg-black flex justify-center items-center pt-12"
+        class="w-full md:h-screen bg-black flex justify-center items-center pt-12 md:mb-0 mb-60"
       >
         <div class="text-white md:w-full flex flex-col items-center justify-center gap-8">
           <h2 data-aos="fade-up"
@@ -205,7 +208,7 @@
           </div>
           <!-- Desktop View -->
 
-           <div class="w-full flex mt-16 gap-16 justify-center items-center">
+           <div class="w-full hidden md:flex mt-16 gap-16 justify-center items-center">
             <div data-aos="fade-right"
             data-aos-offset="150"
             data-aos-delay="200"
@@ -278,13 +281,88 @@
               
            </div>
            </div>
+          <!-- Mobile View -->
+
+           <div class="w-full md:hidden flex flex-col mt-16 gap-16 justify-center items-center">
+            <div data-aos="fade-up"
+            data-aos-offset="150"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+            data-aos-easing="ease-out"
+            data-aos-mirror="true"
+            data-aos-once="false" class="w-full flex flex-col justify-center items-center">
+              <h2 class="text-2xl font-bold text-[#7fffd4]">Technical Skills</h2>
+              <div class="w-5/8">
+                <div
+          data-aos="fade-up"
+          data-aos-offset="150"
+          data-aos-delay="350"
+          data-aos-duration="1000"
+          data-aos-easing="ease-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          class="flex bg-[#7fffd4]/10 backdrop-blur rounded-2xl mt-8 border border-[#7fffd4]/20 shadow-xl shadow-[#7fffd4]/10 gap-0">
+            <div class="flex flex-col">
+              <img class="aspect-auto h-20 bg-white/0 shadow-lg backdrop-blur m-3 rounded-lg p-3 " src="./html.png" alt="">
+          <img class="aspect-auto h-20 bg-white/0 shadow-lg backdrop-blur m-3 rounded-lg p-3 " src="./css.png" alt="">
+          <img class="aspect-auto h-20 bg-white/0 shadow-lg backdrop-blur m-3 rounded-lg p-3 " src="./js.png" alt="">
+          <img class="aspect-auto h-20 bg-white/0 shadow-lg backdrop-blur m-3 rounded-lg p-3 " src="./tail.png" alt="">
+          <img class="aspect-auto h-20 w-20 bg-white/0 shadow-lg backdrop-blur m-3 rounded-lg p-3 " src="./py.png" alt="">
+            </div>
+            <div class="flex flex-col">
+              <img class="aspect-auto h-20 bg-white/0 shadow-lg backdrop-blur m-3 rounded-lg p-3 " src="./db.png" alt="">
+          <img class="aspect-auto h-20 bg-white/0 shadow-lg backdrop-blur m-3 rounded-lg p-3 " src="./ex.png" alt="">
+          <img class="aspect-auto h-20 bg-white/0 shadow-lg backdrop-blur m-3 rounded-lg p-3 " src="./react.png" alt="">
+          <img class="aspect-auto h-20 bg-white/0 shadow-lg backdrop-blur m-3 rounded-lg p-3 " src="./node.png" alt="">
+          <img class="aspect-auto h-20 w-20 bg-white/0 shadow-lg backdrop-blur m-3 rounded-lg p-3 " src="./cpp.png" alt="">
+            </div>
+          
+          </div>
+              </div>
+            
+              
+           </div>
+           <div data-aos="fade-up"
+            data-aos-offset="150"
+            data-aos-delay="350"
+            data-aos-duration="1000"
+            data-aos-easing="ease-out"
+            data-aos-mirror="true"
+            data-aos-once="false" class="w-full flex flex-col justify-center items-center">
+              <h2 class="text-2xl font-bold text-[#7fffd4]">Designing Skills</h2>
+              <div class="w-3/8">
+                <div
+          data-aos="fade-up"
+          data-aos-offset="150"
+          data-aos-delay="500"
+          data-aos-duration="1000"
+          data-aos-easing="ease-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          class="flex bg-[#7fffd4]/10 backdrop-blur rounded-2xl mt-8 border border-[#7fffd4]/20 shadow-xl shadow-[#7fffd4]/10 gap-0">
+            <div class="flex flex-col">
+              <img class="aspect-auto h-20 bg-white/0 shadow-lg backdrop-blur m-3 rounded-lg p-3 " src="./ps.png" alt="">
+          <img class="aspect-auto h-20 bg-white/0 shadow-lg backdrop-blur m-3 rounded-lg p-3 " src="./ae.png" alt="">
+          <img class="aspect-auto h-20 bg-white/0 shadow-lg backdrop-blur m-3 rounded-lg p-3 " src="./pr.png" alt="">
+            </div>
+            <div class="flex flex-col h-full justify-center items-center">
+              <img class="aspect-auto h-20 bg-white/0 shadow-lg backdrop-blur m-3 rounded-lg p-3 " src="./xd.png" alt="">
+          <img class="aspect-auto h-20 bg-white/0 shadow-lg backdrop-blur m-3 rounded-lg p-3 " src="./figma.png" alt="">
+            </div>
+          
+          </div>
+              </div>
+            
+              
+           </div>
+           </div>
             
           
         </div>
       </section>
       <section
         id="education"
-        class="w-full h-screen bg-black flex justify-center items-center pt-12"
+        class="w-full md:h-screen h-fit bg-black flex justify-center items-center pt-12 md:mb-0 mb-60"
       >
         <div class="text-white md:w-3/5 w-full flex px-8 flex-col items-center justify-center gap-8">
           <h2 data-aos="fade-up"
@@ -363,7 +441,7 @@
                 <h2 class="text-gray-400 font-medium text-lg">Kendriya Vidyalaya No.2</h2>
               </div>
               <div class="w-full flex justify-between items-center mb-2 md:mb-0 ">
-                <h2 class="text-gray-400 font-light md:text-lg text-sm">CBSE</h2>
+                <h2 class="text-gray-400 font-light text-sm">CBSE</h2>
                 <h2 class="text-gray-400 font-light md:text-lg text-sm">Percentage: 76
               </div>
               
@@ -375,7 +453,7 @@
       </section>
       <section
         id="projects"
-        class="w-full h-screen bg-black flex justify-center items-center pt-16"
+        class="w-full md:h-screen bg-black flex justify-center items-center pt-16 mb-36  md:mb-0"
       >
         <div class="text-white md:w-3/5 flex px-12 flex-col items-center justify-center gap-8">
           <h2 data-aos="fade-up"
